@@ -20,7 +20,7 @@ An AI-powered tool that converts healthcare software requirements into compliant
 
 ### Installation
 
-\`\`\`bash
+```bash
 # Clone repository
 git clone https://github.com/yourusername/healthcare-test-agent.git
 cd healthcare-test-agent
@@ -31,31 +31,31 @@ uv sync
 # Configure environment
 cp .env.example .env
 # Edit .env with your Google Cloud project details
-\`\`\`
+```
 
 ### Running Locally
 
-\`\`\`bash
+```bash
 # Run Streamlit app
 uv run streamlit run app.py --server.port 8080
 
 # Or run ADK web interface
 uv run adk web --port 8080
-\`\`\`
+```
 
 ### Deploy to Cloud Run
 
-\`\`\`bash
+```bash
 gcloud run deploy healthcare-test-agent \\
   --source . \\
   --port 8080 \\
   --allow-unauthenticated \\
   --region us-central1
-\`\`\`
+```
 
 ## Project Structure
 
-\`\`\`
+```
 healthcare-test-agent/
 ├── healthcare_agent/
 │   ├── __init__.py
@@ -66,7 +66,7 @@ healthcare-test-agent/
 ├── Dockerfile          # Container configuration
 ├── .env.example        # Environment template
 └── README.md
-\`\`\`
+```
 
 ## Usage
 
